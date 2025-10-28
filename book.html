@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Ride | ZipRide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ZipRide</h1>
+  </header>
+
+  <div class="form-box small">
+    <h2>Book Your Ride</h2>
+    <div class="input-field">
+      <input id="pickup" type="text" placeholder="Pickup Location">
+    </div>
+    <div class="input-field">
+      <input id="drop" type="text" placeholder="Drop Location">
+    </div>
+    <div class="input-field">
+      <input id="distance" type="number" placeholder="Distance (km)">
+    </div>
+    <button class="btn" onclick="calculateFare()">Estimate Fare</button>
+    <p id="fareOutput"></p>
+    <a href="confirm.html" class="btn">Confirm Ride</a>
+  </div>
+
+  <footer>
+    <p>© 2025 ZipRide</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
